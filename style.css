@@ -360,6 +360,7 @@ footer {
 
     header {
         flex-direction: column;
+        align-items: center; /* Center logo and nav */
         height: auto;
         padding: 20px;
         position: static; /* Remove fixed position on mobile */
@@ -396,12 +397,13 @@ footer {
     .button-group {
         display: flex;
         flex-direction: column;
+        align-items: center; /* Center buttons */
         gap: 15px;
     }
 
     .button {
         margin-right: 0;
-        width: 100%;
+        width: auto; /* Adjust width to fit content */
     }
 
     .footer-container {
@@ -441,7 +443,7 @@ footer {
     }
 
     .genre-text {
-        text-align: left; /* Reset text alignment on mobile */
+        text-align: center; /* Center genre buttons */
     }
 
     .category-nav a {
