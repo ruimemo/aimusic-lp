@@ -437,9 +437,21 @@ p.description-en {
 }
 @media (max-width: 768px) {
   header {
-    display: flex;
+    padding: 20px 0;
+  }
+
+  .header-container {
+    display: flex; /* Apply flexbox */
     flex-direction: column;
-    align-items: center; /* ロゴとメニューを中央揃え */
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav ul {
     justify-content: center;
   }
 }
