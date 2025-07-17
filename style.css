@@ -352,8 +352,7 @@ footer {
     background-color: rgba(160, 82, 45, 0.05); /* Light accent background on hover */
 }
 
-/* --- Mobile Optimization --- */
-@media (max-width: 768px) {
+media (max-width: 768px) {
   header {
     position: static;
     height: auto;
@@ -435,11 +434,142 @@ p.description-en {
   margin-bottom: 20px;
   font-weight: 400 !important; /* 👈 ここが追加ポイントです */
 }
+
 @media (max-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
-    align-items: center; /* ロゴとメニューを中央揃え */
+    align-items: center;
+    justify-content: center;
+    position: static;
+    height: auto;
+    padding: 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .main-content {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* ヘッダー中央揃え */
+  header {
+    justify-content: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ボタン中央揃え */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .genre-text a.button,
+  .home-hero .button {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+@media (max-width: 768px) {
+  /* 画像とテキストが横並びにならないように縦に並べる */
+  .genre-item {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .genre-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .genre-text {
+    width: 100%;
+  }
+
+  .genre-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .genre-item .description-en,
+  .genre-item .description-jp {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* 横スクロール防止 */
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .category-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .category-nav a {
+    flex: 1 1 40%;
+    text-align: center;
+    margin: 5px;
+  }
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
     justify-content: center;
   }
 }
+.category-nav a {
+    margin: 4px 0; /* ここを小さくすると上下の間隔が詰まる */
+    padding: 8px 16px; /* ボタン内の余白も少し縮める */
+    font-size: 0.95rem; /* スマホで読みやすいサイズ */
+}
+
