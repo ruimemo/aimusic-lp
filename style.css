@@ -435,3 +435,12 @@ p.description-en {
   margin-bottom: 20px;
   font-weight: 400 !important; /* 👈 ここが追加ポイントです */
 }
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ロゴとメニューを中央揃え */
+    justify-content: center;
+  }
+}
+
