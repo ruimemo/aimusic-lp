@@ -541,3 +541,26 @@ img, iframe {
   max-width: 100%;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .track-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .track-item,
+  .track-details {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .track-details iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
