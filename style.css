@@ -417,6 +417,11 @@ p.description-en {
     box-sizing: border-box;
   }
 
+    /* 横スクロール防止 */
+  body {
+    overflow-x: hidden;
+  }
+
   nav {
     display: flex;
     justify-content: center;
