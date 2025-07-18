@@ -408,6 +408,11 @@ p.description-en {
     padding: 20px;
     text-align: center;
     justify-content: center;
+
+    width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
   }
 
   .header-container {
@@ -415,11 +420,6 @@ p.description-en {
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-  }
-
-    /* 横スクロール防止 */
-  body {
-    overflow-x: hidden;
   }
 
   nav {
